@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRTD Technologies - Profile Verification</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static css/form-page.css %}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="container d-flex justify-content-center align-items-center py-3">
+        <img src="/static/images/2.png" alt="CRTD Technologies" class="logo">
+    </header>
+
+    <!-- Main Content -->
+    <main class="container d-flex justify-content-center" style="padding: 0; margin: 0 auto; max-width: 100%; background-color: #eae6e6ac;">
+        <div class="main mt-5 d-flex justify-content-center align-items-center flex-column " style="width: 80%; background-color: #ffffff; border-radius: 10px;">
+        <h2 class="text-center mb-4 mt-5">Review & Verify Your Profile.</h2>
+
+        <!-- Progress Tracker -->
+        <div class="progress-tracker mt-2">
+            <div class="progress-step completed">
+                <div class="step-icon">✓</div>
+                <div class="step-label">Job Apply</div>
+            </div>
+            <div class="progress-step active">
+                <div class="step-icon">
+                    <img src="/static/images/user1.png" alt="">
+                </div>
+                <div class="step-label">Personal Information</div>
+            </div>
+            <div class="progress-step">
+                <div class="step-icon">
+                    <img src="/static/images/heat.png" alt="">
+                </div>
+                <div class="step-label">Education Information</div>
+            </div>
+            <div class="progress-step">
+                <div class="step-icon">
+                    <img src="/static/images/bag.png" alt="">
+                </div>
+                <div class="step-label">Professional Interest</div>
+            </div>
+        </div>
+
+        <!-- Form Container -->
+        <div class="form-container mb-5">
+            <h3 class="mb-4">Personal Information</h3>
+            <form>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Contact Number</label>
+                        <div class="input-group">
+                            <span class="input-group-text">+91</span>
+                            <input type="tel" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">WhatsApp Number</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Father's Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Gender</label>
+                        <select class="form-select">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">State of Birth</label>
+                        <select class="form-select">
+                            <option>Select State</option>
+                        </select>
+                    </div>
+
+                    <!-- Permanent Address -->
+                    <div class="col-12">
+                        <label class="form-label">Permanent Address</label>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Select City</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Select State</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Pin Code">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Address -->
+                    <div class="col-12">
+                        <label class="form-label">Current Address</label>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Select City</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Select State</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Pin Code">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center mt-4">
+                        <button type="submit" class="btn btn-primary continue-btn">Continue</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('/static/images/footer.jpg') no-repeat center center / cover; background-size: cover; height: 100%; width: 100vw;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="color: black;">ABOUT US</h5>
+                    <p>CRTD Technologies is rated as the best software company in India. We combine creativity with technology to give you supreme business results on the Internet.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="color: black;">USEFUL LINKS</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="color: black;">OUR MOBILE APP</h5>
+                    <div class="app-downloads d-flex flex-column">
+                        <img src="/static/images/apple-icon.png" alt="App Store" class="mb-3" style="height: 50px; width: 150px; cursor: pointer;">
+                        <img src="/static/images/play-icon.png" alt="Play Store" style="height: 50px; width: 150px; cursor: pointer;">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5 style="color: black;">GET IN TOUCH WITH US</h5>
+                    <p>+91 8815165433</p>
+                    <p>info@crtd.in</p>
+                    <p>B-nest BHOPAL, SMART <br> CITY DEVELOPMENT <br> CORPORATION LIMITED <br> ZONE-14, Madhya Pradesh <br> 462023</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>Copyright © 2024 | All rights reserved by CRTD Technologies.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
