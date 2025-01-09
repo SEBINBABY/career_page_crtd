@@ -1,0 +1,156 @@
+header {
+  background: linear-gradient(rgba(13, 13, 13, 0.73), rgba(23, 23, 23, 0.87)),
+    url("Images/1.png") no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  height: 85vh;
+}
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+.nav-link.active {
+  color: #007bff !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #555;
+}
+.navbar-light {
+  background-color: white;
+}
+.footer {
+  background: linear-gradient(rgba(11, 10, 10, 0.326), rgba(23, 23, 23, 0.594)),
+    url("https://crtd.in/image/bnest1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0;
+}
+.footer h6 {
+  font-weight: bold;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.social-icons a {
+  margin-right: 15px;
+  color: white;
+  font-size: 1.5rem;
+}
+.app-icons img {
+  width: 150px;
+}
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-content {
+  position: relative;
+  top: 20%;
+}
+.img-responsive {
+  max-width: 90%;
+  width: 100%;
+}
+.text-uppercase {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.text-uppercase {
+  position: relative;
+  padding-bottom: 10px;
+}
+.text-uppercase::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 30%;
+  height: 3px;
+  background: linear-gradient(#0098db, #004193);
+}
+
+@media (max-width: 768px) {
+  .card-body img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .card-body {
+    height: auto !important;
+    padding-top: 60px;
+  }
+  .card {
+    margin-bottom: 100px;
+  }
+}
+
+.card-body {
+  position: relative;
+}
+
+.card img {
+  width: 50px;
+  height: auto;
+}
+
+footer p {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  header {
+    background-size: contain;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    background-size: contain;
+    height: 90vh;
+  }
+}
+@media (max-width: 767px) {
+  .footer  {
+    text-align: center;
+  }
+  .text-uppercase {
+    text-align: center;
+    color: white;
+  }
+  .col-md-3{
+    text-align: left;
+    font-size: 18px;
+    
+  }
+  .text-uppercase::after {
+    
+    align-items: center;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    width: 30%;
+    height: 2px;
+    background: linear-gradient(#0098db, #004193);
+  }
+   
+   
+   
+}
+

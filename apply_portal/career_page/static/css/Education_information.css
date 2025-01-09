@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+.progress-steps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.progress-steps .step {
+  text-align: center;
+  flex: 1;
+}
+.step.completed .step-icon {
+  background-color: #28a745;
+  color: #fff;
+}
+.step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+}
+.footer {
+  background: linear-gradient(rgba(11, 10, 10, 0.326), rgba(23, 23, 23, 0.594)),
+    url("https://crtd.in/image/bnest1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0;
+}
+.footer h6 {
+  font-weight: bold;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.social-icons a {
+  margin-right: 15px;
+  color: white;
+  font-size: 1.5rem;
+}
+.app-icons img {
+  width: 150px;
+}
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-content {
+  position: relative;
+  top: 20%;
+}
+.img-responsive {
+  max-width: 90%;
+  width: 100%;
+}
+.text-uppercase {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.text-uppercase::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 30%;
+  height: 3px;
+  background: linear-gradient(#0098db, #004193);
+}
+main {
+  background-color: #fff;
+  margin: 10vh auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 700px;
+}
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  margin: 30px auto;
+}
+/* Connecting line */
+.progress-steps::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background-color: #e9ecef;
+  z-index: 0;
+  transform: translateY(-50%);
+}
+/* Individual step styling */
+.progress-steps .step {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  flex: 1;
+}
+.progress-steps .step .step-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.progress-steps .step img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.progress-steps .step.completed .step-icon {
+  border: 3px solid #28a745;
+  background-color: #fff;
+}
+.progress-steps .step.completed::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: calc(100% + 120px);
+  height: 4px;
+  background-color: #28a745;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+}
+.progress-steps .step:first-child::after {
+  display: none;
+}
+.progress-steps .step p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .progress-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .progress-steps::before {
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .progress-steps .step {
+    margin-bottom: 20px;
+  }
+  .progress-steps .step.completed::after {
+    width: 4px;
+    height: calc(100% + 20px);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+.form-container {
+  background-color: #bce6fd;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.form-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff;
+}
+.form-container input {
+  margin-bottom: 15px;
+}
+.btn-continue {
+  margin-left: 100px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #0076cb;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-continue:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 576px) {
+  .form-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  .form-container h2 {
+    font-size: 20px;
+  }
+  .btn-continue {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .footer  {
+    text-align: center;
+  }
+  .text-uppercase {
+    text-align: center;
+    color: white;
+  }
+  .col-md-3{
+    text-align: left;
+    font-size: 18px;
+    
+  }
+  .text-uppercase::after {
+    
+    align-items: center;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    width: 30%;
+    height: 2px;
+    background: linear-gradient(#0098db, #004193);
+  }
+   
+   
+   
+}
+
